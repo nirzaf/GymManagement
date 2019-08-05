@@ -13,6 +13,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
 using Microsoft.AspNetCore.Mvc.Routing;
+using Microsoft.AspNetCore.SpaServices.AngularCli;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -131,6 +132,16 @@ namespace WebGYM
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
+
+            app.UseSpa(spa =>
+            {
+                spa.Options.SourcePath = "gym-project";
+                if (env.IsDevelopment())
+                {
+                    spa.UseAngularCliServer(npmScript: "start");
+                }
+            });
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -221,12 +232,6 @@ namespace WebGYM
             {
                 c.SwaggerEndpoint("/swagger/v1.0/swagger.json", "Gym Web API v1.0");
                 c.DocumentTitle = "Title Documentation";
-                //Reference link : https://stackoverflow.com/questions/22008452/collapse-expand-swagger-response-model-class
-                //Reference link : https://swagger.io/docs/open-source-tools/swagger-ui/usage/deep-linking/
-                //  c.DocExpansion(Swashbuckle.AspNetCore.SwaggerUI.DocExpansion.None);
-                // c.DocExpansion(DocExpansion.Full);
-                //    //Reference document: https://docs.microsoft.com/en-us/aspnet/core/tutorials/getting-started-with-swashbuckle?view=aspnetcore-2.2&tabs=visual-studio
-                //    //To serve the Swagger UI at the app's root (http://localhost:<port>/), set the RoutePrefix property to an empty string:
                 c.RoutePrefix = string.Empty;
             });
 
