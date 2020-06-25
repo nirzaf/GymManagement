@@ -1,13 +1,5 @@
 ## Info
-For free database scripts Email at saihacksoft@gmail.com and please like Repo else you can pay :- $ 2.00 here  https://payhip.com/b/vJ1L for getting database scripts.
-
-# Angular 7 Project with ASP.NET CORE APIS (GYM PROJECT)
-
-<img src="https://github.com/saineshwar/Angular-7-Project-with-ASP.NET-CORE-APIS-/blob/master/Images/banner.png?raw=true" alt="Banner" title="Banner" style="max-width:100%;">
-
-## If you are looking for Complete ASP.NET CORE Project with Angular 7 Here is link for it 
-[Link of Project](https://github.com/saineshwar/ASPNET-Core-Angular-7-Project)
-
+For free database scripts Email at mfmfazrin1986@gmail.com and please like Repo
 
 ## Getting Started
 
@@ -83,7 +75,3 @@ Password :- 123456<br>
 - [ ] User Friendly Error Handling for API and Angular App
 - [ ] Listout Most used and useful feature and functionality used in angular or API Project and explain how to use it for beginner.
 - [ ] List out Best Practice Points which should be extended in current project.
-
-## If you are new to Angular Must Watch Video How to Learn Angular in 1 hour
-
-[![Learn Angular](https://github.com/saineshwar/ASPNET-Core-Angular-7-Project/blob/master/Images/hqdefault.jpg)](https://www.youtube.com/watch?v=FV2MXOygDTM "Learn Angular")
